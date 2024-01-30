@@ -1,0 +1,6 @@
+nginx/
+/NGINX
+.acme.sh
+conf/
+letsencrypt/
+

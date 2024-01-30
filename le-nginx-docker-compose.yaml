@@ -1,0 +1,18 @@
+version: '3.9'
+services:
+  nginx:
+    container_name: nginx
+    hostname: nginx
+    image: nginx
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - ./conf:/etc/nginx/:rw
+      - ./letsencrypt:/etc/ssl/private:rw
+    # environment:
+    #   - PUID=1000
+    #   - PGID=1000
+# volumes:
+#   config:
+#   letsencrypt:

@@ -1,6 +1,0 @@
-services:
-  hellowworld:
-    container_name: helloworld
-    image: crccheck/hello-world
-    ports:
-      - 80:8000
